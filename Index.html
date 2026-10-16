@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound of Reason Entertainment | Music Production & Songwriting</title>
+    <style>
+        :root {
+            --primary: #d4af37;
+            --dark: #121212;
+            --light: #f4f4f4;
+            --accent: #2e2e2e;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--accent);
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 2px solid var(--primary);
+        }
+        h1 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: var(--light);
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: var(--primary);
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        h2 {
+            border-left: 4px solid var(--primary);
+            padding-left: 10px;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .track-card {
+            background-color: var(--accent);
+            padding: 1.5rem;
+            border-radius: 5px;
+        }
+        .services-list {
+            list-style: none;
+            padding: 0;
+        }
+        .services-list li {
+            background-color: var(--accent);
+            margin-bottom: 10px;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 2px solid var(--primary);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, select, textarea {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: var(--accent);
+            border: 1px solid var(--primary);
+            color: var(--light);
+            border-radius: 5px;
+        }
+        button {
+            padding: 1rem;
+            background-color: var(--primary);
+            color: var(--dark);
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        button:hover {
+            background-color: #baa429;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sound of Reason Entertainment</h1>
+        <p>Premium Music Production & Songwriting</p>
+        <nav>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="track-card">
+                    <h3>Modern Rap Beat</h3>
+                    <p>Genre: Rap / Hip-Hop | BPM: 140</p>
+                    <audio controls style="width: 100%;">
+                        <source src="track1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="track-card">
+                    <h3>Melodic R&B Track</h3>
+                    <p>Genre: R&B / Soul | BPM: 90</p>
+                    <audio controls style="width: 100%;">
+                        <source src="track2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <ul class="services-list">
+                <li><strong>Custom Beat Production:</strong> Tailored instrumentals for your project, fusing contemporary standards with timeless warmth and heavy low-end.</li>
+                <li><strong>Songwriting & Topline Arrangement:</strong> Crafting memorable melodies and lyrical content that elevate your tracks.</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>Welcome to Sound of Reason Entertainment. We specialize in producing high-quality music across rap and R&B genres. Our sound brings together the warmth and intricate arrangements of golden-era production with the punch and clarity of modern records.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <select name="service" required>
+                    <option value="" disabled selected>Select a Service</option>
+                    <option value="beat">Custom Beat Production</option>
+                    <option value="songwriting">Songwriting & Topline</option>
+                    <option value="other">Other Inquiry</option>
+                </select>
+                <textarea name="message" rows="5" placeholder="Project Details" required></textarea>
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sound of Reason Entertainment.</p>
+    </footer>
+</body>
+</html>
